@@ -1,11 +1,34 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript" src="formatter.js"></script>
 <h2 class="text-center">Enter some text to format</h2>
-<form action="/format-text">
-<textarea
-  class="form-control"
-  rows="5"
-  id="comment"
-  required>
-</textarea>
-    <button class="btn" type="submit">Format</button>
-</form>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-5">
+    <textarea
+      class="form-control"
+      rows="5"
+      id="rawData"
+      required></textarea>
+  </div>
+  <div class="col-sm-2 text-center vertical-center">
+    <button class="btn btn-primary btn-block btn-top" type="submit" onclick="format()">Format</button>
+    <button class="btn btn-block btn-bottom" type="submit" onclick="clear()">Clear</button>
+  </div>
+  <div class="col-sm-5">
+    <textarea
+      class="form-control"
+      rows="5"
+      id="formattedData"
+      required>
+    </textarea>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>
