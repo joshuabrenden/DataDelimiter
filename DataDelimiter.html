@@ -15,8 +15,16 @@
       required></textarea>
   </div>
   <div class="col-sm-2 text-center vertical-center">
-    <button class="btn btn-primary btn-block btn-top" type="submit" onclick="format()">Format</button>
-    <button class="btn btn-block btn-bottom" type="submit" onclick="clear()">Clear</button>
+    <button class="btn btn-primary btn-block btn-top" type="button" onclick="format()">Format</button>
+    <button class="btn btn-info btn-block dropdown-toggle btn-middle" type="button" data-toggle="dropdown">Delimiter
+      <span class="caret"></span>
+    </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">'',''</a></li>
+        <li><a href="#">,</a></li>
+        <li><a href="#">;</a></li>
+      </ul>
+    <button class="btn btn-block btn-bottom" type="button" onclick="clearText()">Clear</button>
   </div>
   <div class="col-sm-5">
     <textarea
@@ -28,7 +36,5 @@
   </div>
 </div>
 </div>
-
-
 </body>
 </html>
